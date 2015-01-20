@@ -4,6 +4,7 @@ datasetUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI
 datasetDirectory <- "UCI HAR Dataset"
 # end configuration
 
+
 # Downloads  data from the web
 obtainData <- function(dataUrl, resultDirectory){
   if (!file.exists(resultDirectory)){
