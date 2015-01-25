@@ -6,7 +6,7 @@ datasetUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI
 datasetDirectory <- "UCI HAR Dataset"
 # end configuration
 
-
+# Additional functions
 # Downloads  data from the web
 obtainData <- function(dataUrl, resultDirectory){
   if (!file.exists(resultDirectory)){
@@ -16,8 +16,6 @@ obtainData <- function(dataUrl, resultDirectory){
     unlink(temp)
   }  
 }
-
-obtainData(dataUrl, datasetDirectory)
 
 # Joins siquence of directories in path
 getFilePath <- function(...) { 
@@ -29,6 +27,9 @@ readData <- function(path) {
   read.table(getFilePath(datasetDirectory, path))
 }
 
+# End Additional functions
+
+obtainData(dataUrl, datasetDirectory)
 trainingSetInput <- testSetInput <-NULL
 
 # Merges the training and the test sets to create one data set.
@@ -53,6 +54,7 @@ triningSetOutput <- readData("train/y_train.txt")[,1]
 testSetOutput <- readData("test/y_test.txt")[,1]
 ids <- append(triningSetOutput, testSetOutput)
 outputData <- activityLables[ids]
+meanAndStdMeas$activity <- outputData
 
 # Appropriately labels the data set with descriptive variable names. 
 names(meanAndStdMeas) <- gsub("^t", "time", names(meanAndStdMeas))
@@ -64,9 +66,6 @@ names(meanAndStdMeas) <- gsub("-std\\(\\)-", "Std", names(meanAndStdMeas))
 subjectTrain <- readData("train/subject_train.txt")[, 1]
 subjectTest <- readData("test/subject_test.txt")[, 1]
 subject <- append(subjectTrain, subjectTest)
-
-# Joins data
-meanAndStdMeas$activity <- outputData
 meanAndStdMeas$subject <- subject
 
 # creates a second, independent tidy data set with the average of each variable for each activity and each subject.
