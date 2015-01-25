@@ -2,7 +2,7 @@
 
 This codebook provide description for varibales from result.txt. Description for original data coulb be find in 'UCI HAR Dataset' directory.
 
-###activity
+            activity
   
 persons activity
 
@@ -20,7 +20,7 @@ Values:
 
 ----------
 
-###subject 
+            subject 
 
 an identifier of the subject who carried out the experiment
 
@@ -38,7 +38,7 @@ Values: 1 ... 30
 
 Following are descriptions of averages.
 
-##Common symbols
+##Commons
 
 
 **Acc** - accelerometer signals.
@@ -57,744 +57,153 @@ All signals are 3-axial. Last literal in variable name denotes axis.
 
 **Mag** -magnitude of three-dimensional signals
 
+All variables are normalized and bounded within [-1,1].
+
+Storage mode: double
+
+Measurement:  intervale
+
 
 ##Average by subject and activity for  time domain signals 
 
-###meanTimeBodyAccMeanX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:   0.222
-            Max:   0.301
-
+            meanTimeBodyAccMeanX
+            meanTimeBodyAccMeanY
+            meanTimeBodyAccMeanZ
 
 ----------
 
-###meanTimeBodyAccMeanY
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.041
-            Max:  -0.001
-
-
-----------
-
-###meanTimeBodyAccMeanZ
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.153
-            Max:  -0.075
-
-
-----------
-
-###meanTimeBodyAccStDevX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.996
-            Max:   0.627
-      
-
-
-----------
-
-###meanTimeBodyAccStDevY
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.990
-            Max:   0.617
-
+            meanTimeBodyAccStDevX
+            meanTimeBodyAccStDevY
+            meanTimeBodyAccStDevZ
 
 ----------
 
 
-###meanTimeBodyAccStDevZ
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.988
-            Max:   0.609
-
+            meanTimeGravityAccMeanX
+            meanTimeGravityAccMeanY
+            meanTimeGravityAccMeanZ
 
 ----------
 
-
-###meanTimeGravityAccMeanX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.680
-            Max:   0.975
-
+            meanTimeGravityAccStDevX
+            meanTimeGravityAccStDevY
+            meanTimeGravityAccStDevZ
 
 ----------
 
-
-###meanTimeGravityAccMeanY
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.480
-            Max:   0.957
+            meanTimeBodyAccJerkMeanX
+            meanTimeBodyAccJerkMeanY
+            meanTimeBodyAccJerkMeanZ
             
 ----------
 
-###meanTimeGravityAccMeanZ
+            meanTimeBodyAccJerkStDevX
+            meanTimeBodyAccJerkStDevY
+            meanTimeBodyAccJerkStDevZ
 
-Storage mode: double
+----------
 
-Measurement:  intervale
+            meanTimeBodyGyroMeanX
+            meanTimeBodyGyroMeanY
+            meanTimeBodyGyroMeanZ
 
-            Min:  -0.495
-            Max:   0.958
+----------
+
+            meanTimeBodyGyroStDevX
+            meanTimeBodyGyroStDevY
+            meanTimeBodyGyroStDevZ
+----------
+
+            meanTimeBodyGyroJerkMeanX
+            meanTimeBodyGyroJerkMeanY
+            meanTimeBodyGyroJerkMeanZ
             
 ----------
 
-###meanTimeGravityAccStDevX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.997
-            Max:  -0.830
-          
+            meanTimeBodyGyroJerkStDevX
+            meanTimeBodyGyroJerkStDevY
+            meanTimeBodyGyroJerkStDevZ
             
 ----------
 
-###meanTimeGravityAccStDevY
+            meanTimeBodyAccMagMean
+            meanTimeBodyAccMagStDev
 
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.994
-            Max:  -0.644
-            
 ----------
 
-###meanTimeGravityAccStDevZ
+            meanTimeGravityAccMagMean
+            meanTimeGravityAccMagStDev
 
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.991
-            Max:  -0.610
-            
 ----------
 
-###meanTimeBodyAccJerkMeanX
+            meanTimeBodyAccJerkMagMean
+            meanTimeBodyAccJerkMagStDev
 
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  0.043
-            Max:  0.130
-            
 ----------
 
-###meanTimeBodyAccJerkMeanY
+            meanTimeBodyGyroMagMean
+            meanTimeBodyGyroMagStDev
 
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.039
-            Max:   0.057
-            
 ----------
 
-###meanTimeBodyAccJerkMeanZ
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.067
-            Max:   0.038
-            
-----------
-
-###meanTimeBodyAccJerkStDevX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.995
-            Max:   0.544
-            
-----------
-
-###meanTimeBodyAccJerkStDevY
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.990
-            Max:   0.355
-            
-----------
-
-###meanTimeBodyAccJerkStDevZ
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.993
-            Max:   0.031
-            
-----------
-
-###meanTimeBodyGyroMeanX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.206
-            Max:   0.193
-            
-----------
-
-###meanTimeBodyGyroMeanY
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.204
-            Max:   0.027
-            
-----------
-
-###meanTimeBodyGyroMeanZ
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.072
-            Max:   0.179
-            
-----------
-
-###meanTimeBodyGyroStDevX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.994
-            Max:   0.268
-            
-----------
-
-###meanTimeBodyGyroStDevY
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.994
-            Max:   0.477
-            
-----------
-
-###meanTimeBodyGyroStDevZ
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.986
-            Max:   0.565
-            
-----------
-
-###meanTimeBodyGyroJerkMeanX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.157
-            Max:  -0.022
-            
-----------
-
-###meanTimeBodyGyroJerkMeanY
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.077
-            Max:  -0.013
-            
-----------
-
-###meanTimeBodyGyroJerkMeanZ
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.092
-            Max:  -0.007
-            
-----------
-
-###meanTimeBodyGyroJerkStDevX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.997
-            Max:   0.179
-            
-----------
-
-###meanTimeBodyGyroJerkStDevY
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.997
-            Max:   0.296
-            
-----------
-
-###meanTimeBodyGyroJerkStDevZ
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.995
-            Max:   0.193
-            
-----------
-
-###meanTimeBodyAccMagMean
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.986
-            Max:   0.645
-            
-----------
-
-###meanTimeBodyAccMagStDev
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.986
-            Max:   0.428
-            
-----------
-
-###meanTimeGravityAccMagMean
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.986
-            Max:   0.645
-            
-----------
-
-###meanTimeGravityAccMagStDev
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.986
-            Max:   0.428
-            
-----------
-
-###meanTimeBodyAccJerkMagMean
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.993
-            Max:   0.434
-            
-----------
-
-###meanTimeBodyAccJerkMagStDev
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.995
-            Max:   0.451
-            
-----------
-
-###meanTimeBodyGyroMagMean
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.981
-            Max:   0.418
-            
-----------
-
-###meanTimeBodyGyroMagStDev
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.981
-            Max:   0.300
-            
-----------
-
-###meanTimeBodyGyroJerkMagMean
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.997
-            Max:   0.088
-            
-----------
-
-###meanTimeBodyGyroJerkMagStDev
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.998
-            Max:   0.250
+            meanTimeBodyGyroJerkMagMean
+            meanTimeBodyGyroJerkMagStDev
 
 
 ##Average by subject and activity for  frequency domain signals 
 
 
-###meanFrequencyBodyAccMeanX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.995
-            Max:   0.537
+            meanFrequencyBodyAccMeanX
+            meanFrequencyBodyAccMeanY
+            meanFrequencyBodyAccMeanZ
             
 ----------
 
-###meanFrequencyBodyAccMeanY
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.989
-            Max:   0.524
+            meanFrequencyBodyAccStDevX
+            meanFrequencyBodyAccStDevY
+            meanFrequencyBodyAccStDevZ
             
 ----------
 
-###meanFrequencyBodyAccMeanZ
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.989
-            Max:   0.281
+            meanFrequencyBodyAccJerkMeanX
+            meanFrequencyBodyAccJerkMeanY
+            meanFrequencyBodyAccJerkMeanZ
             
 ----------
 
-###meanFrequencyBodyAccStDevX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.997
-            Max:   0.659
+            meanFrequencyBodyAccJerkStDevX
+            meanFrequencyBodyAccJerkStDevY
+            meanFrequencyBodyAccJerkStDevZ
             
 ----------
 
-###meanFrequencyBodyAccStDevY
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.991
-            Max:   0.560
+            meanFrequencyBodyGyroMeanX
+            meanFrequencyBodyGyroMeanY
+            meanFrequencyBodyGyroMeanZ
             
 ----------
 
-###meanFrequencyBodyAccStDevZ
+            meanFrequencyBodyGyroStDevX
+            meanFrequencyBodyGyroStDevY
+            meanFrequencyBodyGyroStDevZ
 
-Storage mode: double
+----------
 
-Measurement:  intervale
+            meanFrequencyBodyAccMagMean
+            meanFrequencyBodyAccMagStDev
 
-            Min:  -0.987
-            Max:   0.687
+----------
+
+            meanFrequencyBodyBodyAccJerkMagMean
+            meanFrequencyBodyBodyAccJerkMagStDev
             
 ----------
 
-###meanFrequencyBodyAccJerkMeanX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.995
-            Max:   0.474
+            meanFrequencyBodyBodyGyroMagMean
+            meanFrequencyBodyBodyGyroMagStDev
             
 ----------
 
-###meanFrequencyBodyAccJerkMeanY
+            meanFrequencyBodyBodyGyroJerkMagMean
+            meanFrequencyBodyBodyGyroJerkMagStDev
 
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.989
-            Max:   0.277
-            
-----------
-
-###meanFrequencyBodyAccJerkMeanZ
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.992
-            Max:   0.158
-            
-----------
-
-###meanFrequencyBodyAccJerkStDevX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.995
-            Max:   0.477
-            
-----------
-
-###meanFrequencyBodyAccJerkStDevY
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.990
-            Max:   0.350
-            
-----------
-
-###meanFrequencyBodyAccJerkStDevZ
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.993
-            Max:  -0.006
-            
-----------
-
-###meanFrequencyBodyGyroMeanX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.993
-            Max:   0.475
-            
-----------
-
-###meanFrequencyBodyGyroMeanY
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.994
-            Max:   0.329
-            
-----------
-
-###meanFrequencyBodyGyroMeanZ
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.986
-            Max:   0.492
-            
-----------
-
-###meanFrequencyBodyGyroStDevX
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.995
-            Max:   0.197
-            
-----------
-
-###meanFrequencyBodyGyroStDevY
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.994
-            Max:   0.646
-            
-----------
-
-###meanFrequencyBodyGyroStDevZ
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.987
-            Max:   0.522
-            
-----------
-
-###meanFrequencyBodyAccMagMean
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.987
-            Max:   0.587
-            
-----------
-
-###meanFrequencyBodyAccMagStDev
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.988
-            Max:   0.179
-            
-----------
-
-###meanFrequencyBodyBodyAccJerkMagMean
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.994
-            Max:   0.538
-            
-----------
-
-###meanFrequencyBodyBodyAccJerkMagStDev
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.994
-            Max:   0.316
-            
-----------
-
-###meanFrequencyBodyBodyGyroMagMean
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.987
-            Max:   0.204
-            
-----------
-
-###meanFrequencyBodyBodyGyroMagStDev
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.981
-            Max:   0.237
-            
-----------
-
-###meanFrequencyBodyBodyGyroJerkMagMean
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.998
-            Max:   0.147
-            
-----------
-
-###meanFrequencyBodyBodyGyroJerkMagStDev
-
-Storage mode: double
-
-Measurement:  intervale
-
-            Min:  -0.998
-            Max:   0.288
