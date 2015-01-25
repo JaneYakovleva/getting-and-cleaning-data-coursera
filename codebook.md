@@ -34,11 +34,12 @@ Values: 1 ... 30
 
 #Average values
 
-**All measurement are averages value which grouped by subject and activity. To prevent complication of a variables name  I do not add to each variable postfix 'Mean'. Please keep it in mind.**
+**All measurement are averages value which grouped by subject and activity**
 
 Following are descriptions of averages.
 
 ##Common symbols
+
 
 **Acc** - accelerometer signals.
 
@@ -50,7 +51,7 @@ The acceleration signal was separated into **Body** and **Gravity** acceleration
 
 **Mean** - mean value (it's mean, that original value already represent average value for measurement. Not to be confused with average by subject and activity).
 
-**Std** - Standard deviation.
+**StDev** - Standard deviation.
 
 All signals are 3-axial. Last literal in variable name denotes axis.
 
@@ -59,7 +60,7 @@ All signals are 3-axial. Last literal in variable name denotes axis.
 
 ##Average by subject and activity for  time domain signals 
 
-###timeBodyAccMeanX
+###meanTimeBodyAccMeanX
 
 Storage mode: double
 
@@ -71,7 +72,7 @@ Measurement:  intervale
 
 ----------
 
-###timeBodyAccMeanY
+###meanTimeBodyAccMeanY
 
 Storage mode: double
 
@@ -83,7 +84,7 @@ Measurement:  intervale
 
 ----------
 
-###timeBodyAccMeanZ
+###meanTimeBodyAccMeanZ
 
 Storage mode: double
 
@@ -95,7 +96,7 @@ Measurement:  intervale
 
 ----------
 
-###timeBodyAccStdX
+###meanTimeBodyAccStDevX
 
 Storage mode: double
 
@@ -108,7 +109,7 @@ Measurement:  intervale
 
 ----------
 
-###timeBodyAccStdY
+###meanTimeBodyAccStDevY
 
 Storage mode: double
 
@@ -121,7 +122,7 @@ Measurement:  intervale
 ----------
 
 
-###timeBodyAccStdZ
+###meanTimeBodyAccStDevZ
 
 Storage mode: double
 
@@ -134,7 +135,7 @@ Measurement:  intervale
 ----------
 
 
-###timeGravityAccMeanX
+###meanTimeGravityAccMeanX
 
 Storage mode: double
 
@@ -147,7 +148,7 @@ Measurement:  intervale
 ----------
 
 
-###timeGravityAccMeanY
+###meanTimeGravityAccMeanY
 
 Storage mode: double
 
@@ -158,7 +159,7 @@ Measurement:  intervale
             
 ----------
 
-###timeGravityAccMeanZ
+###meanTimeGravityAccMeanZ
 
 Storage mode: double
 
@@ -169,7 +170,7 @@ Measurement:  intervale
             
 ----------
 
-###timeGravityAccStdX
+###meanTimeGravityAccStDevX
 
 Storage mode: double
 
@@ -181,7 +182,7 @@ Measurement:  intervale
             
 ----------
 
-###timeGravityAccStdY
+###meanTimeGravityAccStDevY
 
 Storage mode: double
 
@@ -192,7 +193,7 @@ Measurement:  intervale
             
 ----------
 
-###timeGravityAccStdZ
+###meanTimeGravityAccStDevZ
 
 
 Storage mode: double
@@ -204,7 +205,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyAccJerkMeanX
+###meanTimeBodyAccJerkMeanX
 
 Storage mode: double
 
@@ -215,7 +216,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyAccJerkMeanY
+###meanTimeBodyAccJerkMeanY
 
 Storage mode: double
 
@@ -226,7 +227,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyAccJerkMeanZ
+###meanTimeBodyAccJerkMeanZ
 
 Storage mode: double
 
@@ -237,7 +238,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyAccJerkStdX
+###meanTimeBodyAccJerkStDevX
 
 Storage mode: double
 
@@ -248,7 +249,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyAccJerkStdY
+###meanTimeBodyAccJerkStDevY
 
 Storage mode: double
 
@@ -259,7 +260,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyAccJerkStdZ
+###meanTimeBodyAccJerkStDevZ
 
 Storage mode: double
 
@@ -270,7 +271,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroMeanX
+###meanTimeBodyGyroMeanX
 
 Storage mode: double
 
@@ -281,7 +282,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroMeanY
+###meanTimeBodyGyroMeanY
 
 Storage mode: double
 
@@ -292,7 +293,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroMeanZ
+###meanTimeBodyGyroMeanZ
 
 Storage mode: double
 
@@ -303,7 +304,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroStdX
+###meanTimeBodyGyroStDevX
 
 Storage mode: double
 
@@ -314,7 +315,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroStdY
+###meanTimeBodyGyroStDevY
 
 Storage mode: double
 
@@ -325,7 +326,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroStdZ
+###meanTimeBodyGyroStDevZ
 
 Storage mode: double
 
@@ -336,7 +337,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroJerkMeanX
+###meanTimeBodyGyroJerkMeanX
 
 Storage mode: double
 
@@ -347,7 +348,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroJerkMeanY
+###meanTimeBodyGyroJerkMeanY
 
 Storage mode: double
 
@@ -358,7 +359,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroJerkMeanZ
+###meanTimeBodyGyroJerkMeanZ
 
 Storage mode: double
 
@@ -369,7 +370,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroJerkStdX
+###meanTimeBodyGyroJerkStDevX
 
 Storage mode: double
 
@@ -380,7 +381,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroJerkStdY
+###meanTimeBodyGyroJerkStDevY
 
 Storage mode: double
 
@@ -391,7 +392,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroJerkStdZ
+###meanTimeBodyGyroJerkStDevZ
 
 Storage mode: double
 
@@ -402,7 +403,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyAccMagMean
+###meanTimeBodyAccMagMean
 
 Storage mode: double
 
@@ -413,7 +414,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyAccMagStd
+###meanTimeBodyAccMagStDev
 
 Storage mode: double
 
@@ -424,7 +425,7 @@ Measurement:  intervale
             
 ----------
 
-###timeGravityAccMagMean
+###meanTimeGravityAccMagMean
 
 Storage mode: double
 
@@ -435,7 +436,7 @@ Measurement:  intervale
             
 ----------
 
-###timeGravityAccMagStd
+###meanTimeGravityAccMagStDev
 
 Storage mode: double
 
@@ -446,7 +447,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyAccJerkMagMean
+###meanTimeBodyAccJerkMagMean
 
 Storage mode: double
 
@@ -457,7 +458,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyAccJerkMagStd
+###meanTimeBodyAccJerkMagStDev
 
 Storage mode: double
 
@@ -468,7 +469,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroMagMean
+###meanTimeBodyGyroMagMean
 
 Storage mode: double
 
@@ -479,7 +480,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroMagStd
+###meanTimeBodyGyroMagStDev
 
 Storage mode: double
 
@@ -490,7 +491,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroJerkMagMean
+###meanTimeBodyGyroJerkMagMean
 
 Storage mode: double
 
@@ -501,7 +502,7 @@ Measurement:  intervale
             
 ----------
 
-###timeBodyGyroJerkMagStd
+###meanTimeBodyGyroJerkMagStDev
 
 Storage mode: double
 
@@ -514,7 +515,7 @@ Measurement:  intervale
 ##Average by subject and activity for  frequency domain signals 
 
 
-###frequencyBodyAccMeanX
+###meanFrequencyBodyAccMeanX
 
 Storage mode: double
 
@@ -525,7 +526,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyAccMeanY
+###meanFrequencyBodyAccMeanY
 
 Storage mode: double
 
@@ -536,7 +537,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyAccMeanZ
+###meanFrequencyBodyAccMeanZ
 
 Storage mode: double
 
@@ -547,7 +548,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyAccStdX
+###meanFrequencyBodyAccStDevX
 
 Storage mode: double
 
@@ -558,7 +559,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyAccStdY
+###meanFrequencyBodyAccStDevY
 
 Storage mode: double
 
@@ -569,7 +570,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyAccStdZ
+###meanFrequencyBodyAccStDevZ
 
 Storage mode: double
 
@@ -580,7 +581,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyAccJerkMeanX
+###meanFrequencyBodyAccJerkMeanX
 
 Storage mode: double
 
@@ -591,7 +592,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyAccJerkMeanY
+###meanFrequencyBodyAccJerkMeanY
 
 Storage mode: double
 
@@ -602,7 +603,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyAccJerkMeanZ
+###meanFrequencyBodyAccJerkMeanZ
 
 Storage mode: double
 
@@ -613,7 +614,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyAccJerkStdX
+###meanFrequencyBodyAccJerkStDevX
 
 Storage mode: double
 
@@ -624,7 +625,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyAccJerkStdY
+###meanFrequencyBodyAccJerkStDevY
 
 Storage mode: double
 
@@ -635,7 +636,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyAccJerkStdZ
+###meanFrequencyBodyAccJerkStDevZ
 
 Storage mode: double
 
@@ -646,7 +647,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyGyroMeanX
+###meanFrequencyBodyGyroMeanX
 
 Storage mode: double
 
@@ -657,7 +658,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyGyroMeanY
+###meanFrequencyBodyGyroMeanY
 
 Storage mode: double
 
@@ -668,7 +669,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyGyroMeanZ
+###meanFrequencyBodyGyroMeanZ
 
 Storage mode: double
 
@@ -679,7 +680,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyGyroStdX
+###meanFrequencyBodyGyroStDevX
 
 Storage mode: double
 
@@ -690,7 +691,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyGyroStdY
+###meanFrequencyBodyGyroStDevY
 
 Storage mode: double
 
@@ -701,7 +702,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyGyroStdZ
+###meanFrequencyBodyGyroStDevZ
 
 Storage mode: double
 
@@ -712,7 +713,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyAccMagMean
+###meanFrequencyBodyAccMagMean
 
 Storage mode: double
 
@@ -723,7 +724,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyAccMagStd
+###meanFrequencyBodyAccMagStDev
 
 Storage mode: double
 
@@ -734,7 +735,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyBodyAccJerkMagMean
+###meanFrequencyBodyBodyAccJerkMagMean
 
 Storage mode: double
 
@@ -745,7 +746,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyBodyAccJerkMagStd
+###meanFrequencyBodyBodyAccJerkMagStDev
 
 Storage mode: double
 
@@ -756,7 +757,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyBodyGyroMagMean
+###meanFrequencyBodyBodyGyroMagMean
 
 Storage mode: double
 
@@ -767,7 +768,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyBodyGyroMagStd
+###meanFrequencyBodyBodyGyroMagStDev
 
 Storage mode: double
 
@@ -778,7 +779,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyBodyGyroJerkMagMean
+###meanFrequencyBodyBodyGyroJerkMagMean
 
 Storage mode: double
 
@@ -789,7 +790,7 @@ Measurement:  intervale
             
 ----------
 
-###frequencyBodyBodyGyroJerkMagStd
+###meanFrequencyBodyBodyGyroJerkMagStDev
 
 Storage mode: double
 

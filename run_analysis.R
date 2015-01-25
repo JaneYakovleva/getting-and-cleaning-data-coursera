@@ -54,7 +54,7 @@ outputData <- activityLables[ids]
 names(meanAndStdMeas) <- gsub("^t", "time", names(meanAndStdMeas))
 names(meanAndStdMeas) <- gsub("^f", "frequency", names(meanAndStdMeas))
 names(meanAndStdMeas) <- gsub("-mean\\(\\)", "Mean", names(meanAndStdMeas))
-names(meanAndStdMeas) <- gsub("-std\\(\\)", "Std", names(meanAndStdMeas))
+names(meanAndStdMeas) <- gsub("-std\\(\\)", "StDev", names(meanAndStdMeas))
 names(meanAndStdMeas) <- gsub("-", "", names(meanAndStdMeas))
 
 # Reads subject data
@@ -69,5 +69,8 @@ meanAndStdMeas$subject <- subject
 # creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 firstTidyDataSet <- data.table(meanAndStdMeas)
 secondTidyDataSet <- firstTidyDataSet[, lapply(.SD, mean), by=c("label", "subject")]
-
+newNames <- gsub("^t", "meanT", names(secondTidyDataSet))
+newNames <- gsub("^f", "meanF", newNames)
+setnames(secondTidyDataSet,  names(secondTidyDataSet), newNames)
 write.table(secondTidyDataSet, "result.csv", sep = ",")
+
