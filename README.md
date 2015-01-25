@@ -14,6 +14,19 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 
 ----------
+##Files descriotion
+
+'UCI HAR Dataset' directory with raw data
+
+README.md - provides information about project and description of script workflow (all data transformation)
+
+run_analysis.R - file with code for performing analysis
+
+result.txt - result data
+
+codebook.md - вescription of variables in the result data (original variables (features) description can be find in 'UCI HAR Dataset' directory) 
+
+----------
 ##Script description
 **run_analysis.R** -  code for performing analysis.
 
