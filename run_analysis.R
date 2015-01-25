@@ -55,6 +55,7 @@ names(meanAndStdMeas) <- gsub("^t", "time", names(meanAndStdMeas))
 names(meanAndStdMeas) <- gsub("^f", "frequency", names(meanAndStdMeas))
 names(meanAndStdMeas) <- gsub("-mean\\(\\)", "Mean", names(meanAndStdMeas))
 names(meanAndStdMeas) <- gsub("-std\\(\\)", "Std", names(meanAndStdMeas))
+names(meanAndStdMeas) <- gsub("-", "", names(meanAndStdMeas))
 
 # Reads subject data
 subjectTrain <- readData("train/subject_train.txt")[, 1] 

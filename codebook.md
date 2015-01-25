@@ -54,6 +54,8 @@ The acceleration signal was separated into **Body** and **Gravity** acceleration
 
 All signals are 3-axial. Last literal in variable name denotes axis.
 
+**Mag** -magnitude of three-dimensional signals
+
 
 ##Average by subject and activity for  time domain signals 
 
@@ -400,6 +402,115 @@ Measurement:  intervale
             
 ----------
 
+###timeBodyAccMagMean
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.986
+            Max:   0.645
+            
+----------
+
+###timeBodyAccMagStd
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.986
+            Max:   0.428
+            
+----------
+
+###timeGravityAccMagMean
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.986
+            Max:   0.645
+            
+----------
+
+###timeGravityAccMagStd
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.986
+            Max:   0.428
+            
+----------
+
+###timeBodyAccJerkMagMean
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.993
+            Max:   0.434
+            
+----------
+
+###timeBodyAccJerkMagStd
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.995
+            Max:   0.451
+            
+----------
+
+###timeBodyGyroMagMean
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.981
+            Max:   0.418
+            
+----------
+
+###timeBodyGyroMagStd
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.981
+            Max:   0.300
+            
+----------
+
+###timeBodyGyroJerkMagMean
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.997
+            Max:   0.088
+            
+----------
+
+###timeBodyGyroJerkMagStd
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.998
+            Max:   0.250
+
+
 ##Average by subject and activity for  frequency domain signals 
 
 
@@ -598,3 +709,91 @@ Measurement:  intervale
 
             Min:  -0.987
             Max:   0.522
+            
+----------
+
+###frequencyBodyAccMagMean
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.987
+            Max:   0.587
+            
+----------
+
+###frequencyBodyAccMagStd
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.988
+            Max:   0.179
+            
+----------
+
+###frequencyBodyBodyAccJerkMagMean
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.994
+            Max:   0.538
+            
+----------
+
+###frequencyBodyBodyAccJerkMagStd
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.994
+            Max:   0.316
+            
+----------
+
+###frequencyBodyBodyGyroMagMean
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.987
+            Max:   0.204
+            
+----------
+
+###frequencyBodyBodyGyroMagStd
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.981
+            Max:   0.237
+            
+----------
+
+###frequencyBodyBodyGyroJerkMagMean
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.998
+            Max:   0.147
+            
+----------
+
+###frequencyBodyBodyGyroJerkMagStd
+
+Storage mode: double
+
+Measurement:  intervale
+
+            Min:  -0.998
+            Max:   0.288
