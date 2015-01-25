@@ -1,5 +1,6 @@
 #Getting and Cleaning Data Course CodeBook
 
+This codebook provide description for varibales from result.txt. Description for original data coulb be find in 'UCI HAR Dataset' directory.
 
 ###activity
   
