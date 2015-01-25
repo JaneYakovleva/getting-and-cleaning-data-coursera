@@ -72,5 +72,4 @@ secondTidyDataSet <- firstTidyDataSet[, lapply(.SD, mean), by=c("label", "subjec
 newNames <- gsub("^t", "meanT", names(secondTidyDataSet))
 newNames <- gsub("^f", "meanF", newNames)
 setnames(secondTidyDataSet,  names(secondTidyDataSet), newNames)
-write.table(secondTidyDataSet, "result.csv", sep = ",")
-
+write.table(secondTidyDataSet, "result.txt", sep = ",")
