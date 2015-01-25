@@ -1,4 +1,6 @@
+#setup enviroment
 library("data.table")
+
 # configuration
 datasetUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 datasetDirectory <- "UCI HAR Dataset"
@@ -14,6 +16,7 @@ obtainData <- function(dataUrl, resultDirectory){
     unlink(temp)
   }  
 }
+
 obtainData(dataUrl, datasetDirectory)
 
 # Joins siquence of directories in path
@@ -63,11 +66,12 @@ subjectTest <- readData("test/subject_test.txt")[, 1]
 subject <- append(subjectTrain, subjectTest)
 
 # Joins data
-meanAndStdMeas$label <- outputData
+meanAndStdMeas$activity <- outputData
 meanAndStdMeas$subject <- subject
 
 # creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 firstTidyDataSet <- data.table(meanAndStdMeas)
-secondTidyDataSet <- firstTidyDataSet[, lapply(.SD, mean), by=c("label", "subject")]
+secondTidyDataSet <- firstTidyDataSet[, lapply(.SD, mean), by=c("activity", "subject")]
 
-write.table(secondTidyDataSet, "result.csv", sep = ",")
+# Creates data set as a txt file created with write.table() using row.name=FALSE 
+write.table(secondTidyDataSet, "result.txt", sep = ",", row.names = FALSE)
