@@ -1,12 +1,9 @@
-#setup enviroment
 library("data.table")
-
 # configuration
 datasetUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 datasetDirectory <- "UCI HAR Dataset"
 # end configuration
 
-# Additional functions
 # Downloads  data from the web
 obtainData <- function(dataUrl, resultDirectory){
   if (!file.exists(resultDirectory)){
@@ -16,6 +13,7 @@ obtainData <- function(dataUrl, resultDirectory){
     unlink(temp)
   }  
 }
+obtainData(dataUrl, datasetDirectory)
 
 # Joins siquence of directories in path
 getFilePath <- function(...) { 
@@ -27,9 +25,6 @@ readData <- function(path) {
   read.table(getFilePath(datasetDirectory, path))
 }
 
-# End Additional functions
-
-obtainData(dataUrl, datasetDirectory)
 trainingSetInput <- testSetInput <-NULL
 
 # Merges the training and the test sets to create one data set.
@@ -46,7 +41,7 @@ featureNames <- readData("features.txt")[, 2]
 names(inputData) <- featureNames
 
 # Extracts only the measurements on the mean and standard deviation for each measurement. 
-meanAndStdMeas <- inputData[, grep("-(mean|std)\\(\\)-", names(inputData))]
+meanAndStdMeas <- inputData[, grep("-(mean|std)\\(\\)", names(inputData))]
 
 # Uses descriptive activity names to name the activities in the data set
 activityLables <- readData("activity_labels.txt")[,2]
@@ -54,23 +49,24 @@ triningSetOutput <- readData("train/y_train.txt")[,1]
 testSetOutput <- readData("test/y_test.txt")[,1]
 ids <- append(triningSetOutput, testSetOutput)
 outputData <- activityLables[ids]
-meanAndStdMeas$activity <- outputData
 
 # Appropriately labels the data set with descriptive variable names. 
 names(meanAndStdMeas) <- gsub("^t", "time", names(meanAndStdMeas))
 names(meanAndStdMeas) <- gsub("^f", "frequency", names(meanAndStdMeas))
-names(meanAndStdMeas) <- gsub("-mean\\(\\)-", "Mean", names(meanAndStdMeas))
-names(meanAndStdMeas) <- gsub("-std\\(\\)-", "Std", names(meanAndStdMeas))
+names(meanAndStdMeas) <- gsub("-mean\\(\\)", "Mean", names(meanAndStdMeas))
+names(meanAndStdMeas) <- gsub("-std\\(\\)", "Std", names(meanAndStdMeas))
 
 # Reads subject data
-subjectTrain <- readData("train/subject_train.txt")[, 1]
+subjectTrain <- readData("train/subject_train.txt")[, 1] 
 subjectTest <- readData("test/subject_test.txt")[, 1]
 subject <- append(subjectTrain, subjectTest)
+
+# Joins data
+meanAndStdMeas$label <- outputData
 meanAndStdMeas$subject <- subject
 
 # creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 firstTidyDataSet <- data.table(meanAndStdMeas)
-secondTidyDataSet <- firstTidyDataSet[, lapply(.SD, mean), by=c("activity", "subject")]
+secondTidyDataSet <- firstTidyDataSet[, lapply(.SD, mean), by=c("label", "subject")]
 
-# Creates data set as a txt file created with write.table() using row.name=FALSE 
-write.table(secondTidyDataSet, "result.txt", sep = ",", row.names = FALSE)
+write.table(secondTidyDataSet, "result.csv", sep = ",")
