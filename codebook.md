@@ -33,19 +33,21 @@ Values: 1 ... 30
 
 #Average values
 
+**All measurement are averages value which grouped by subject and activity. To prevent complication of a variables name  I do not add to each variable postfix 'Mean'. Please keep it in mind.**
+
 Following are descriptions of averages.
 
 ##Common symbols
 
 **Acc** - accelerometer signals.
 
-The acceleration signal was then separated into **Body** and **Gravity** acceleration signals
+The acceleration signal was separated into **Body** and **Gravity** acceleration signals
 
 **Gyro** - gyroscope signals.
 
 **Jerk** - the body linear acceleration and angular velocity derived in time.
 
-**Mean** - mean value.
+**Mean** - mean value (it's mean, that original value already represent average value for measurement. Not to be confused with average by subject and activity).
 
 **Std** - Standard deviation.
 
